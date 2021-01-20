@@ -10,6 +10,8 @@
   ],
   "scripts": {
     "start-app": "yarn build-system && yarn workspace application run start",
-    "build-system": "yarn workspace design-system run build"
+    "build-system": "yarn workspace design-system run build",
+    "build-app": "yarn workspace application run build",
+    "build": "yarn build-system && yarn build-app"
   }
 }
