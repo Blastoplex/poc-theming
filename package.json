@@ -1,0 +1,15 @@
+{
+  "name": "poc-theming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Blastoplex/poc-theming.git",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start-app": "yarn build-system && yarn workspace application run start",
+    "build-system": "yarn workspace design-system run build"
+  }
+}
