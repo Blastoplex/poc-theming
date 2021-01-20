@@ -6,7 +6,7 @@ import * as customRefs from "./custom.treat";
 const CustomComponent = () => {
   let styles;
   styles = useStyles(customRefs);
-  return <a className={styles.a}>I'm a custom link component that references the theme for a font color and design tokens for a bg colo</a>
+  return <a className={styles.a}>I'm a custom link component that references the theme for a font color and design tokens for a bg color</a>
 }
 
 function App() {

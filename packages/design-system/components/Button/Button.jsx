@@ -6,5 +6,5 @@ export default ({ children, type="primary", ...rest }) => {
   let styles;
   styles = useStyles(styleRefs);
 
-  return <button className={styles.button[type]} {...rest}>{children}</button>;
+  return <button className={ styles.button.base + ' ' + styles.button[type]} {...rest}>{children}</button>;
 };
